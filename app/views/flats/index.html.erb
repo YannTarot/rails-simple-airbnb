@@ -1,0 +1,11 @@
+<div class="flat-row">
+  <% @flats.each do |flat| %>
+    <div class="flat-card">
+        <img class= "flat-img"src="https://images.unsplash.com/photo-1493809842364-78817add7ffb?w=1200" alt="Photo of flat">
+        <h5 class="flat-title"><%= flat.name %></h5>
+        <p class="card-text"><%= flat.description %></p>
+        <p class="card-text"><%= flat.price_per_night %>€ per night</p>
+        <p class="card-text">Number of guests<%= flat.number_of_guests %></p>
+    </div>
+      <% end %>
+  </div>
